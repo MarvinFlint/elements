@@ -137,9 +137,9 @@ function createTable(filterVar) {
         // check if any filters are set
         if(filterVar === data[i].groupBlock || filterVar === data[i].standardState || filterVar === data[i].bondingType){
           // grid formation
-          if (col > 11) {
+          if (col > 8) {
             row--;
-            col = 0;
+            col = -8;
           }
           // assign the c'th element in this array the index of the current element should it match the filter
           filteredElements[c] = i;
